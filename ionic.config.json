@@ -1,0 +1,8 @@
+{
+  "name": "e-security",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue",
+  "id": "665c1d0c"
+}

@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "e-security",
+	"webDir": "dist",
+	"bundledWebRuntime": false
+}
