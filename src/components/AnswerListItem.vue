@@ -7,7 +7,7 @@
 </template>
 
 <script lang="ts">
-import {computed, defineComponent, ref} from "vue";
+import {defineComponent} from "vue";
 import {IonItem, IonLabel} from "@ionic/vue";
 
 export default defineComponent({

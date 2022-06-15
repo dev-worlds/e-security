@@ -36,8 +36,8 @@ import {
   IonToolbar
 } from '@ionic/vue';
 import {personCircle} from 'ionicons/icons';
-import {getQuestion} from '../data/questions';
-import {computed, defineComponent, reactive, ref} from 'vue';
+import {getQuestion} from '@/data/questions';
+import {defineComponent, ref} from 'vue';
 import AnswerListItem from "@/components/AnswerListItem.vue";
 
 export default defineComponent({
@@ -55,12 +55,12 @@ export default defineComponent({
   setup() {
     const route = useRoute();
     const question = getQuestion(parseInt(route.params.id as string, 10));
-    const answer_value = ref(null);
+    const answer_value = ref(0);
     const setAnswerValue = (num: number) => {
       answer_value.value = num;
     }
     const getColor = (id: number) => {
-      if (answer_value.value !== null) {
+      if (answer_value.value) {
         if (question.value === id) {
           return 'success'
         } else {

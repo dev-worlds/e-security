@@ -13,7 +13,7 @@ export interface Question {
 
 const questions: Question[] = [
     {
-        id: 1,
+        id: 0,
         question: 'Как классифицируются помещения в отношении опасности поражения людей электрическим током?',
         answers: [
             {
@@ -37,7 +37,7 @@ const questions: Question[] = [
         read: false
     },
     {
-        id: 2,
+        id: 1,
         question: 'Какие помещения, согласно Правилам устройств электроустановок, называются сырыми?',
         answers: [
             {
@@ -61,7 +61,7 @@ const questions: Question[] = [
         read: false
     },
     {
-        id: 3,
+        id: 2,
         question: 'Какие помещения, согласно Правилам устройств электроустановок, относятся к влажным?',
         answers: [
             {
@@ -88,4 +88,4 @@ const questions: Question[] = [
 
 export const getQuestions = () => questions;
 
-export const getQuestion = (id: number) => questions.find(m => m.id === id);
+export const getQuestion = (id: number) => questions[id];
